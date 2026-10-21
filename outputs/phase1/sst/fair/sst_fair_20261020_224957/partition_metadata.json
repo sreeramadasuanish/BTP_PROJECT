@@ -1,0 +1,23 @@
+{
+  "dataset": "SST",
+  "scenario": "Fair",
+  "num_clients": 10,
+  "seed": 42,
+  "is_fair": true,
+  "method": "uniform",
+  "description": "Uniform random IID allocation across clients",
+  "train_size_stats": {
+    "min": 854,
+    "max": 855,
+    "mean": 854.4,
+    "std": 0.48989794855663565,
+    "total": 8544
+  },
+  "test_size_stats": {
+    "min": 221,
+    "max": 221,
+    "mean": 221.0,
+    "std": 0.0,
+    "total": 2210
+  }
+}

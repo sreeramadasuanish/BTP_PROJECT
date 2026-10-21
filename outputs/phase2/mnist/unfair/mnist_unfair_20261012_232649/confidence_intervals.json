@@ -1,0 +1,93 @@
+{
+  "algorithm": "Algorithm 3 (Confidence Interval)",
+  "is_permitted": false,
+  "status": "UNAVAILABLE",
+  "reason": "Algorithm 2 (Welch-Type F Test) rejected the null hypothesis of equal performance (p = 3.1523e-268 < alpha = 0.05). Because performance disparity is statistically significant across clients, the common mean assumption mu_1 = ... = mu_K does not hold. A pooled global confidence interval cannot be constructed under Algorithm 3 decision rules.",
+  "confidence_level": 0.95,
+  "pooled_estimate": null,
+  "pooled_ci_lower": null,
+  "pooled_ci_upper": null,
+  "per_client_intervals": [
+    {
+      "client_id": 0,
+      "mean": 0.9052600000000001,
+      "variance": 9.514383838383853e-05,
+      "standard_error": 0.00975417030730131,
+      "ci_lower": 0.8860252000287712,
+      "ci_upper": 0.924494799971229
+    },
+    {
+      "client_id": 1,
+      "mean": 0.65117,
+      "variance": 0.0002436576767676772,
+      "standard_error": 0.01560953800622162,
+      "ci_lower": 0.6203886693758849,
+      "ci_upper": 0.6819513306241152
+    },
+    {
+      "client_id": 2,
+      "mean": 0.8815099999999998,
+      "variance": 8.46362626262628e-05,
+      "standard_error": 0.009199796879619832,
+      "ci_lower": 0.8633684003374467,
+      "ci_upper": 0.8996515996625529
+    },
+    {
+      "client_id": 3,
+      "mean": 0.6368900000000001,
+      "variance": 0.0002230483838383842,
+      "standard_error": 0.014934804445937155,
+      "ci_lower": 0.6074392146357142,
+      "ci_upper": 0.666340785364286
+    },
+    {
+      "client_id": 4,
+      "mean": 0.6642700000000002,
+      "variance": 0.0001932697979797979,
+      "standard_error": 0.013902150840060608,
+      "ci_lower": 0.6368555626717677,
+      "ci_upper": 0.6916844373282328
+    },
+    {
+      "client_id": 5,
+      "mean": 0.96549,
+      "variance": 4.0333232323232404e-05,
+      "standard_error": 0.006350845008597864,
+      "ci_lower": 0.9529664096237668,
+      "ci_upper": 0.9780135903762331
+    },
+    {
+      "client_id": 6,
+      "mean": 0.52666,
+      "variance": 0.0001813983838383842,
+      "standard_error": 0.013468421727818898,
+      "ci_lower": 0.500100857633085,
+      "ci_upper": 0.553219142366915
+    },
+    {
+      "client_id": 7,
+      "mean": 0.99029,
+      "variance": 9.016060606060623e-06,
+      "standard_error": 0.0030026755745602325,
+      "ci_lower": 0.984368854250481,
+      "ci_upper": 0.996211145749519
+    },
+    {
+      "client_id": 8,
+      "mean": 0.48483000000000004,
+      "variance": 0.00026561727272727284,
+      "standard_error": 0.01629776894937687,
+      "ci_lower": 0.4526915078635733,
+      "ci_upper": 0.5169684921364268
+    },
+    {
+      "client_id": 9,
+      "mean": 0.90021,
+      "variance": 0.00010028878787878806,
+      "standard_error": 0.010014428984160209,
+      "ci_lower": 0.8804619812277408,
+      "ci_upper": 0.9199580187722591
+    }
+  ],
+  "interpretation": "Algorithm 2 (Welch-Type F Test) rejected the null hypothesis of equal performance (p = 3.1523e-268 < alpha = 0.05). Because performance disparity is statistically significant across clients, the common mean assumption mu_1 = ... = mu_K does not hold. A pooled global confidence interval cannot be constructed under Algorithm 3 decision rules."
+}

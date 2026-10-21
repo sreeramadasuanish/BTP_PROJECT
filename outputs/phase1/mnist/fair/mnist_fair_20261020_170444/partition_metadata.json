@@ -1,0 +1,23 @@
+{
+  "dataset": "MNIST",
+  "scenario": "Fair",
+  "num_clients": 10,
+  "seed": 42,
+  "is_fair": true,
+  "method": "uniform",
+  "description": "Uniform random IID allocation across clients",
+  "train_size_stats": {
+    "min": 6000,
+    "max": 6000,
+    "mean": 6000.0,
+    "std": 0.0,
+    "total": 60000
+  },
+  "test_size_stats": {
+    "min": 1000,
+    "max": 1000,
+    "mean": 1000.0,
+    "std": 0.0,
+    "total": 10000
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "experiment_id": "cifar-10_fair_20261013_001339",
+  "dataset": "CIFAR-10",
+  "scenario": "Fair",
+  "overall_verdict": "FAIR (Performance Homogeneous)",
+  "reject_h0": false,
+  "plain_english": "Under the Conservative Joint Policy (Disparity detected if either Alg 1 or Alg 2 rejects H0), the global federated model demonstrates statistically fair performance. Neither test found significant evidence to reject the null hypothesis of equal performance at alpha = 0.05. Alg 1 p-value: 0.3883, Alg 2 p-value: 0.4010.",
+  "alg1_result": {
+    "algorithm": "Algorithm 1 (Graybill-Deal / Chi-Square T1)",
+    "null_hypothesis": "H0: mu_1 = mu_2 = ... = mu_K = mu (Equal client performance)",
+    "alternative_hypothesis": "H1: mu_i != mu_j for some i != j (Performance disparity exists)",
+    "k_clients": 25,
+    "degrees_of_freedom": 24,
+    "test_statistic": 25.323894448314963,
+    "p_value": 0.38833453067783,
+    "significance_level": 0.05,
+    "graybill_deal_mean": 0.2945497585505645,
+    "reject_h0": false,
+    "verdict": "Fair (Fail to Reject H0: Homogeneous)",
+    "interpretation": "The test statistic T1 = 25.3239 does not exceed the critical value at alpha = 0.05 (p = 0.3883 >= 0.05). We fail to reject the null hypothesis. Cross-client performance differences are consistent with random estimation variation.",
+    "variance_ratio": 1.5229025674415124,
+    "warnings": []
+  },
+  "alg2_result": {
+    "algorithm": "Algorithm 2 (Welch-Type F Test)",
+    "null_hypothesis": "H0: mu_1 = mu_2 = ... = mu_K = mu (Equal client performance)",
+    "alternative_hypothesis": "H1: mu_i != mu_j for some i != j (Performance disparity exists)",
+    "k_clients": 25,
+    "df_numerator": 24.0,
+    "df_denominator": 1796.4842559556184,
+    "test_statistic": 1.0462324763640123,
+    "p_value": 0.4009889471202407,
+    "significance_level": 0.05,
+    "weighted_mean": 0.2945497585505645,
+    "reject_h0": false,
+    "verdict": "Fair (Fail to Reject H0: Homogeneous)",
+    "interpretation": "The Welch-type test statistic F = 1.0462 with df = (24, 1796.5) is not significant (p = 0.4010 >= 0.05). We fail to reject H0. Model performance is statistically homogeneous across clients under heteroscedastic conditions.",
+    "lambda_correction": 0.11578169934439914
+  }
+}

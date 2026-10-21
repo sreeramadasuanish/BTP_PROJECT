@@ -1,0 +1,47 @@
+dataset:
+  name: "CIFAR-10"
+  type: "image"
+  num_classes: 10
+  channels: 3
+  height: 32
+  width: 32
+  train_samples: 50000
+  test_samples: 10000
+  classes:
+    - "Airplane"
+    - "Automobile"
+    - "Bird"
+    - "Cat"
+    - "Deer"
+    - "Dog"
+    - "Frog"
+    - "Horse"
+    - "Ship"
+    - "Truck"
+
+model:
+  # FIXED: Matches the class name expected by your model registry / selector
+  architecture: "CIFAR10CNN"
+  channels: 3
+  num_classes: 10
+  dropout: 0.3
+
+partitions:
+  fair:
+    method: "uniform"
+    description: "Uniform random IID allocation across clients"
+  unfair:
+    method: "dirichlet"
+    description: "Dirichlet label distribution with configurable alpha"
+    alpha: 0.1
+    supported_alphas: [0.001, 0.01, 0.1, 10.0]
+
+training:
+  default_num_clients: 25
+  default_rounds: 30          # Increased from 20 to allow proper convergence
+  default_local_epochs: 2     # Balanced for speed and convergence
+  default_batch_size: 64      # Crucial fix: prevents CPU/GPU overhead compared to batch size 16
+  default_lr: 0.01
+  optimizer: "SGD"
+  momentum: 0.9               # Added momentum for faster SGD convergence on CNNs
+  loss_fn: "CrossEntropyLoss"

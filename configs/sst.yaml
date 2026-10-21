@@ -1,0 +1,35 @@
+dataset:
+  name: "SST"
+  type: "text"
+  num_classes: 2
+  train_samples: 8544
+  val_samples: 1101
+  test_samples: 2210
+  classes: ["negative", "positive"]
+  max_seq_length: 64
+  vocab_size: 10000
+
+model:
+  architecture: "LSTM_Attention"
+  embedding_dim: 100
+  hidden_dim: 64
+  num_classes: 2
+  dropout: 0.2
+
+partitions:
+  fair:
+    method: "uniform"
+    description: "Approximately uniform class proportions across clients"
+  unfair:
+    method: "label_skew"
+    description: "Label-skewed client distributions"
+    skew_ratio: 0.90
+
+training:
+  default_num_clients: 50
+  default_rounds: 10
+  default_local_epochs: 1
+  default_batch_size: 32
+  default_lr: 0.01
+  optimizer: "Adam"
+  loss_fn: "CrossEntropyLoss"

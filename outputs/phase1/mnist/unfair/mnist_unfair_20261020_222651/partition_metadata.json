@@ -1,0 +1,24 @@
+{
+  "dataset": "MNIST",
+  "scenario": "Unfair",
+  "num_clients": 15,
+  "seed": 42,
+  "is_fair": false,
+  "method": "clustered",
+  "shards_per_client": 2,
+  "description": "Clustered non-IID shards (2 shards per client)",
+  "train_size_stats": {
+    "min": 4000,
+    "max": 4000,
+    "mean": 4000.0,
+    "std": 0.0,
+    "total": 60000
+  },
+  "test_size_stats": {
+    "min": 666,
+    "max": 668,
+    "mean": 666.6666666666666,
+    "std": 0.6992058987801011,
+    "total": 10000
+  }
+}

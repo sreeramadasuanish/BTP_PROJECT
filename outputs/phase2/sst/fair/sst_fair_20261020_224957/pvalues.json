@@ -1,0 +1,40 @@
+{
+  "experiment_id": "sst_fair_20261020_224957",
+  "dataset": "SST",
+  "scenario": "Fair",
+  "overall_verdict": "FAIR (Performance Homogeneous)",
+  "reject_h0": false,
+  "plain_english": "Under the Conservative Joint Policy (Disparity detected if either Alg 1 or Alg 2 rejects H0), the global federated model demonstrates statistically fair performance. Neither test found significant evidence to reject the null hypothesis of equal performance at alpha = 0.05. Alg 1 p-value: 0.3306, Alg 2 p-value: 0.3374.",
+  "alg1_result": {
+    "algorithm": "Algorithm 1 (Graybill-Deal / Chi-Square T1)",
+    "null_hypothesis": "H0: mu_1 = mu_2 = ... = mu_K = mu (Equal client performance)",
+    "alternative_hypothesis": "H1: mu_i != mu_j for some i != j (Performance disparity exists)",
+    "k_clients": 10,
+    "degrees_of_freedom": 9,
+    "test_statistic": 10.250449008253938,
+    "p_value": 0.330593136288562,
+    "significance_level": 0.05,
+    "graybill_deal_mean": 0.8312707394206198,
+    "reject_h0": false,
+    "verdict": "Fair (Fail to Reject H0: Homogeneous)",
+    "interpretation": "The test statistic T1 = 10.2504 does not exceed the critical value at alpha = 0.05 (p = 0.3306 >= 0.05). We fail to reject the null hypothesis. Cross-client performance differences are consistent with random estimation variation.",
+    "variance_ratio": 1.540349761728109,
+    "warnings": []
+  },
+  "alg2_result": {
+    "algorithm": "Algorithm 2 (Welch-Type F Test)",
+    "null_hypothesis": "H0: mu_1 = mu_2 = ... = mu_K = mu (Equal client performance)",
+    "alternative_hypothesis": "H1: mu_i != mu_j for some i != j (Performance disparity exists)",
+    "k_clients": 10,
+    "df_numerator": 9.0,
+    "df_denominator": 810.5323956373679,
+    "test_statistic": 1.1314935092867617,
+    "p_value": 0.33740359224114735,
+    "significance_level": 0.05,
+    "weighted_mean": 0.8312707394206198,
+    "reject_h0": false,
+    "verdict": "Fair (Fail to Reject H0: Homogeneous)",
+    "interpretation": "The Welch-type test statistic F = 1.1315 with df = (9, 810.5) is not significant (p = 0.3374 >= 0.05). We fail to reject H0. Model performance is statistically homogeneous across clients under heteroscedastic conditions.",
+    "lambda_correction": 0.04071398031419857
+  }
+}

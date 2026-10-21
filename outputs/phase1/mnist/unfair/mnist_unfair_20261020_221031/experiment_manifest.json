@@ -1,0 +1,20 @@
+{
+  "experiment_id": "mnist_unfair_20261020_221031",
+  "dataset": "MNIST",
+  "scenario": "Unfair",
+  "timestamp": "2026-10-20T22:10:31.428244",
+  "seed": 42,
+  "evaluation_metric": "accuracy",
+  "num_clients": 10,
+  "num_rounds": 10,
+  "final_accuracy": 0.8919,
+  "final_loss": 0.10797113661092396,
+  "client_test_sets_count": 10,
+  "files": {
+    "model": "global_model.pt",
+    "round_logs": "round_logs.csv",
+    "model_config": "model_config.json",
+    "partition_metadata": "partition_metadata.json",
+    "client_test_sets_dir": "client_test_sets"
+  }
+}

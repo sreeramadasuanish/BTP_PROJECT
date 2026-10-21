@@ -1,0 +1,35 @@
+project:
+  name: "FED4FED"
+  version: "1.0.0"
+  description: "Privacy-Preserving Federated Learning & Statistical Fairness Evaluation Platform"
+
+paths:
+  data_dir: "data"
+  raw_data_dir: "data/raw"
+  processed_data_dir: "data/processed"
+  output_dir: "outputs"
+  phase1_output_dir: "outputs/phase1"
+  phase2_output_dir: "outputs/phase2"
+  configs_dir: "configs"
+
+system:
+  seed: 42
+  device: "cpu"
+  num_workers: 0
+
+phase1:
+  default_dataset: "MNIST"
+  default_scenario: "Fair"
+  default_num_clients: 100
+  default_rounds: 10
+  default_local_epochs: 1
+  default_batch_size: 32
+  default_lr: 0.01
+  client_fraction: 1.0
+
+phase2:
+  default_bootstrap_resamples: 200
+  default_significance_level: 0.05
+  default_confidence_level: 0.95
+  default_metric: "accuracy"
+  algorithms_to_run: ["Algorithm 1", "Algorithm 2"]

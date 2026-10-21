@@ -1,0 +1,23 @@
+{
+  "name": "MNIST",
+  "type": "image",
+  "num_classes": 10,
+  "input_shape": "(1, 28, 28)",
+  "train_samples": 60000,
+  "test_samples": 10000,
+  "classes": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9"
+  ],
+  "model_architecture": "MLP (784 -> 50 -> 10)",
+  "fair_partition": "Uniform random IID allocation",
+  "unfair_partition": "Clustered label distribution"
+}

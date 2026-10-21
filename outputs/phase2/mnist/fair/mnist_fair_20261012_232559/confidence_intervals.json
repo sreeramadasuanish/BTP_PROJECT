@@ -1,0 +1,96 @@
+{
+  "algorithm": "Algorithm 3 (Confidence Interval)",
+  "is_permitted": true,
+  "status": "COMPUTED",
+  "reason": null,
+  "confidence_level": 0.95,
+  "pooled_estimate": 0.9291383981700648,
+  "pooled_variance": 5.943775148610982e-06,
+  "pooled_se": 0.002437985879493764,
+  "effective_df": 810.2724135601565,
+  "pooled_ci_lower": 0.924352885357076,
+  "pooled_ci_upper": 0.9339239109830536,
+  "per_client_intervals": [
+    {
+      "client_id": 0,
+      "mean": 0.9230600000000001,
+      "variance": 7.393575757575749e-05,
+      "standard_error": 0.008598590441215205,
+      "ci_lower": 0.9061039533081052,
+      "ci_upper": 0.940016046691895
+    },
+    {
+      "client_id": 1,
+      "mean": 0.9354199999999999,
+      "variance": 4.895313131313077e-05,
+      "standard_error": 0.006996651435732008,
+      "ci_lower": 0.9216229074134598,
+      "ci_upper": 0.9492170925865401
+    },
+    {
+      "client_id": 2,
+      "mean": 0.92956,
+      "variance": 6.386505050505021e-05,
+      "standard_error": 0.0079915612057376,
+      "ci_lower": 0.9138009885815573,
+      "ci_upper": 0.9453190114184428
+    },
+    {
+      "client_id": 3,
+      "mean": 0.9285800000000002,
+      "variance": 6.957939393939368e-05,
+      "standard_error": 0.008341426373192637,
+      "ci_lower": 0.9121310696749888,
+      "ci_upper": 0.9450289303250116
+    },
+    {
+      "client_id": 4,
+      "mean": 0.9424799999999999,
+      "variance": 4.1464242424242086e-05,
+      "standard_error": 0.0064392734391577194,
+      "ci_lower": 0.9297820326014263,
+      "ci_upper": 0.9551779673985734
+    },
+    {
+      "client_id": 5,
+      "mean": 0.9311600000000001,
+      "variance": 5.5368080808080465e-05,
+      "standard_error": 0.007440973108947543,
+      "ci_lower": 0.9164867243822097,
+      "ci_upper": 0.9458332756177905
+    },
+    {
+      "client_id": 6,
+      "mean": 0.9325700000000002,
+      "variance": 4.489404040404001e-05,
+      "standard_error": 0.006700301515905087,
+      "ci_lower": 0.9193572965772513,
+      "ci_upper": 0.9457827034227492
+    },
+    {
+      "client_id": 7,
+      "mean": 0.9157100000000001,
+      "variance": 6.380393939393945e-05,
+      "standard_error": 0.007987736813011521,
+      "ci_lower": 0.8999585301178215,
+      "ci_upper": 0.9314614698821788
+    },
+    {
+      "client_id": 8,
+      "mean": 0.91735,
+      "variance": 7.186616161616176e-05,
+      "standard_error": 0.008477391203439991,
+      "ci_lower": 0.9006329529381942,
+      "ci_upper": 0.9340670470618058
+    },
+    {
+      "client_id": 9,
+      "mean": 0.92122,
+      "variance": 7.548646464646463e-05,
+      "standard_error": 0.008688294691506764,
+      "ci_lower": 0.9040870604246956,
+      "ci_upper": 0.9383529395753045
+    }
+  ],
+  "interpretation": "At 95.0% confidence level, the common global model performance is estimated at 0.9291 with confidence interval [0.9244, 0.9339] (SE = 0.0024, effective df = 810.3)."
+}

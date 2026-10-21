@@ -1,0 +1,20 @@
+{
+  "experiment_id": "cifar-10_fair_20261019_220654",
+  "dataset": "CIFAR-10",
+  "scenario": "Fair",
+  "timestamp": "2026-10-19T22:06:54.884047",
+  "seed": 42,
+  "evaluation_metric": "accuracy",
+  "num_clients": 15,
+  "num_rounds": 4,
+  "final_accuracy": 0.2947,
+  "final_loss": 1.2505195888543128,
+  "client_test_sets_count": 15,
+  "files": {
+    "model": "global_model.pt",
+    "round_logs": "round_logs.csv",
+    "model_config": "model_config.json",
+    "partition_metadata": "partition_metadata.json",
+    "client_test_sets_dir": "client_test_sets"
+  }
+}

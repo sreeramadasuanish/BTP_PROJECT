@@ -1,0 +1,45 @@
+dataset:
+  name: "Fashion-MNIST"
+  type: "image"
+  num_classes: 10
+  channels: 1
+  height: 28
+  width: 28
+  train_samples: 60000
+  test_samples: 10000
+  classes:
+    - "T-shirt/top"
+    - "Trouser"
+    - "Pullover"
+    - "Dress"
+    - "Coat"
+    - "Sandal"
+    - "Shirt"
+    - "Sneaker"
+    - "Bag"
+    - "Ankle boot"
+
+model:
+  architecture: "CNN_FashionMNIST"
+  channels: 1
+  num_classes: 10
+  dropout: 0.2
+
+partitions:
+  fair:
+    method: "uniform"
+    description: "Uniform random IID allocation across clients"
+  unfair:
+    method: "category"
+    description: "Different clothing-class proportions across clients"
+    primary_classes_per_client: 2
+    skew_ratio: 0.85
+
+training:
+  default_num_clients: 100
+  default_rounds: 10
+  default_local_epochs: 1
+  default_batch_size: 32
+  default_lr: 0.01
+  optimizer: "SGD"
+  loss_fn: "CrossEntropyLoss"

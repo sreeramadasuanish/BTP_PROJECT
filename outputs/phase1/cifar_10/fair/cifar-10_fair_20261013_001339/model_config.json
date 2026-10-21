@@ -1,0 +1,23 @@
+{
+  "name": "CIFAR-10",
+  "type": "image",
+  "num_classes": 10,
+  "input_shape": "(3, 32, 32)",
+  "train_samples": 50000,
+  "test_samples": 10000,
+  "classes": [
+    "Airplane",
+    "Automobile",
+    "Bird",
+    "Cat",
+    "Deer",
+    "Dog",
+    "Frog",
+    "Horse",
+    "Ship",
+    "Truck"
+  ],
+  "model_architecture": "CNN (3 conv layers + 2 FC, dropout 0.2)",
+  "fair_partition": "Uniform random IID allocation",
+  "unfair_partition": "Dirichlet label distribution (\u03b1 \u2208 {0.001, 0.01, 0.1, 10})"
+}

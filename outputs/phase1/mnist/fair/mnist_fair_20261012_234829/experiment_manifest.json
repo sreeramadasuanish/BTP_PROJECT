@@ -1,0 +1,20 @@
+{
+  "experiment_id": "mnist_fair_20261012_234829",
+  "dataset": "MNIST",
+  "scenario": "Fair",
+  "timestamp": "2026-10-12T23:48:30.307751",
+  "seed": 42,
+  "evaluation_metric": "accuracy",
+  "num_clients": 100,
+  "num_rounds": 5,
+  "final_accuracy": 0.8236,
+  "final_loss": 1.085097066394488,
+  "client_test_sets_count": 100,
+  "files": {
+    "model": "global_model.pt",
+    "round_logs": "round_logs.csv",
+    "model_config": "model_config.json",
+    "partition_metadata": "partition_metadata.json",
+    "client_test_sets_dir": "client_test_sets"
+  }
+}

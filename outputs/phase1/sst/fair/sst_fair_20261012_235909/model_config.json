@@ -1,0 +1,16 @@
+{
+  "name": "SST",
+  "type": "text",
+  "num_classes": 2,
+  "input_shape": "Sequence (max_len=64, vocab=10000)",
+  "train_samples": 8544,
+  "val_samples": 1101,
+  "test_samples": 2210,
+  "classes": [
+    "negative",
+    "positive"
+  ],
+  "model_architecture": "LSTM + Attention (embed=100, hidden=64)",
+  "fair_partition": "Uniform class proportions across clients",
+  "unfair_partition": "Label-skewed client distributions",
+  "vocab": 

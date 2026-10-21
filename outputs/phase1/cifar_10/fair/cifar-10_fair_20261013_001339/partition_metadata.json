@@ -1,0 +1,23 @@
+{
+  "dataset": "CIFAR-10",
+  "scenario": "Fair",
+  "num_clients": 25,
+  "seed": 42,
+  "is_fair": true,
+  "method": "uniform",
+  "description": "Uniform random IID allocation across clients",
+  "train_size_stats": {
+    "min": 2000,
+    "max": 2000,
+    "mean": 2000.0,
+    "std": 0.0,
+    "total": 50000
+  },
+  "test_size_stats": {
+    "min": 400,
+    "max": 400,
+    "mean": 400.0,
+    "std": 0.0,
+    "total": 10000
+  }
+}
